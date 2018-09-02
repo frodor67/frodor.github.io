@@ -18,7 +18,9 @@
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		
 </head>
 
 <body>
@@ -27,7 +29,7 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/main-img.png" alt="монитор">
+ 				<img class="header-img wow bounceInLeft " data-wow-delay="0.1s" src="img/main-img.png" alt="монитор">
  			</div>
  			<!-- /.col-7 -->
  			<div class="col-lg-5">
@@ -89,10 +91,10 @@
  			<div class="col-md-4">
  				<div class="social-block">
  					<p>Подпишитесь:</p>
- 					<a href="#"><img src="img/socials/facebook-logo-button.png" alt="фейсбук"></a>
- 					<a href="#"><img src="img/socials/telegram-symbol.png" alt="телеграм"></a>
- 					<a href="#"><img src="img/socials/vk-social-logotype.png" alt="вк"></a>
- 					<a href="#"><img src="img/socials/youtube-symbol.png" alt="ютуб"></a>
+ 					<a href="#"><img class="wow bounceInDown " data-wow-delay="0.1s" src="img/socials/facebook-logo-button.png" alt="фейсбук"></a>
+ 					<a href="#"><img class="wow bounceInDown " data-wow-delay="0.2s" src="img/socials/telegram-symbol.png" alt="телеграм"></a>
+ 					<a href="#"><img class="wow bounceInDown " data-wow-delay="0.3s" src="img/socials/vk-social-logotype.png" alt="вк"></a>
+ 					<a href="#"><img class="wow bounceInDown " data-wow-delay="0.4s" src="img/socials/youtube-symbol.png" alt="ютуб"></a>
  				</div>
  			</div>
  			<div class="col-md-4">
@@ -106,5 +108,10 @@
  	</div>
  	<!-- /.container -->
  </footer>
+
+ <script src="js/wow.min.js"></script>
+ <script>
+ 	new WOW().init();
+ </script>
 </body>
 </html>
